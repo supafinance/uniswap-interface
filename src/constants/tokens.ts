@@ -386,8 +386,8 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     SupportedChainId.BASE,
     '0x4200000000000000000000000000000000000006',
     18,
-    'USDC',
-    'USD Coin'
+    'WETH',
+    'Wrapped Ether'
   ),
 }
 
