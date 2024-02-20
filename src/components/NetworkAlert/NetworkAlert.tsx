@@ -37,6 +37,7 @@ const SHOULD_SHOW_ALERT = {
   [SupportedChainId.POLYGON_MUMBAI]: true,
   [SupportedChainId.CELO]: true,
   [SupportedChainId.CELO_ALFAJORES]: true,
+  [SupportedChainId.BASE]: true,
 }
 
 type NetworkAlertChains = keyof typeof SHOULD_SHOW_ALERT
@@ -61,6 +62,8 @@ const BG_COLORS_BY_DARK_MODE_AND_CHAIN_ID: {
       'radial-gradient(285% 8200% at 30% 50%, rgba(40, 160, 240, 0.01) 0%, rgba(219, 255, 0, 0) 100%),radial-gradient(75% 75% at 0% 0%, rgba(150, 190, 220, 0.05) 0%, rgba(33, 114, 229, 0.05) 100%), hsla(0, 0%, 100%, 0.05)',
     [SupportedChainId.ARBITRUM_RINKEBY]:
       'radial-gradient(285% 8200% at 30% 50%, rgba(40, 160, 240, 0.05) 0%, rgba(219, 255, 0, 0) 100%),radial-gradient(75% 75% at 0% 0%, rgba(150, 190, 220, 0.05) 0%, rgba(33, 114, 229, 0.1) 100%), hsla(0, 0%, 100%, 0.05)',
+    [SupportedChainId.BASE]:
+      'radial-gradient(285% 8200% at 30% 50%, rgba(40, 160, 240, 0.01) 0%, rgba(219, 255, 0, 0) 100%),radial-gradient(75% 75% at 0% 0%, rgba(150, 190, 220, 0.05) 0%, rgba(33, 114, 229, 0.05) 100%), hsla(0, 0%, 100%, 0.05)',
   },
   light: {
     [SupportedChainId.POLYGON]:
@@ -78,6 +81,8 @@ const BG_COLORS_BY_DARK_MODE_AND_CHAIN_ID: {
     [SupportedChainId.ARBITRUM_ONE]:
       'radial-gradient(285% 8200% at 30% 50%, rgba(40, 160, 240, 0.1) 0%, rgba(219, 255, 0, 0) 100%),radial-gradient(circle at top left, hsla(206, 50%, 75%, 0.01), hsla(215, 79%, 51%, 0.12)), hsla(0, 0%, 100%, 0.1)',
     [SupportedChainId.ARBITRUM_RINKEBY]:
+      'radial-gradient(285% 8200% at 30% 50%, rgba(40, 160, 240, 0.1) 0%, rgba(219, 255, 0, 0) 100%),radial-gradient(circle at top left, hsla(206, 50%, 75%, 0.01), hsla(215, 79%, 51%, 0.12)), hsla(0, 0%, 100%, 0.1)',
+    [SupportedChainId.BASE]:
       'radial-gradient(285% 8200% at 30% 50%, rgba(40, 160, 240, 0.1) 0%, rgba(219, 255, 0, 0) 100%),radial-gradient(circle at top left, hsla(206, 50%, 75%, 0.01), hsla(215, 79%, 51%, 0.12)), hsla(0, 0%, 100%, 0.1)',
   },
 }
@@ -137,6 +142,7 @@ const TEXT_COLORS: { [chainId in NetworkAlertChains]: string } = {
   [SupportedChainId.OPTIMISM]: '#ff3856',
   [SupportedChainId.OPTIMISM_GOERLI]: '#ff3856',
   [SupportedChainId.ARBITRUM_ONE]: '#0490ed',
+  [SupportedChainId.BASE]: '#0490ed',
   [SupportedChainId.ARBITRUM_RINKEBY]: '#0490ed',
 }
 

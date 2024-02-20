@@ -12,6 +12,9 @@ export function getNativeTokenDBAddress(chain: Chain): string {
     case Chain.Arbitrum:
     case Chain.EthereumGoerli:
     case Chain.Optimism:
+    case Chain.Base:
+      return 'ETH'
+    default:
       return 'ETH'
   }
 }

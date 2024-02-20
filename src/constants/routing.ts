@@ -26,6 +26,7 @@ import {
   SWISE,
   TRIBE,
   USDC_ARBITRUM,
+  USDC_BASE,
   USDC_MAINNET,
   USDC_OPTIMISM,
   USDC_POLYGON,
@@ -86,6 +87,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     WETH_POLYGON,
   ],
   [SupportedChainId.CELO]: [CUSD_CELO, CEUR_CELO, CMC02_CELO, PORTAL_USDC_CELO, PORTAL_ETH_CELO],
+  [SupportedChainId.BASE]: [],
 }
 export const ADDITIONAL_BASES: { [chainId: number]: { [tokenAddress: string]: Token[] } } = {
   [SupportedChainId.MAINNET]: {
@@ -158,6 +160,11 @@ export const COMMON_BASES: ChainCurrencyList = {
     WBTC_OPTIMISM,
   ],
   [SupportedChainId.OPTIMISM_GOERLI]: [nativeOnChain(SupportedChainId.OPTIMISM_GOERLI)],
+  [SupportedChainId.BASE]: [
+    nativeOnChain(SupportedChainId.BASE),
+    WRAPPED_NATIVE_CURRENCY[SupportedChainId.BASE] as Token,
+    USDC_BASE,
+  ],
   [SupportedChainId.POLYGON]: [
     nativeOnChain(SupportedChainId.POLYGON),
     WETH_POLYGON,
