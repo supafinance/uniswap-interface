@@ -83,7 +83,6 @@ export const SWAP_ROUTER_ADDRESSES: AddressMap = {
   ]),
   [SupportedChainId.CELO]: CELO_ROUTER_ADDRESS,
   [SupportedChainId.CELO_ALFAJORES]: CELO_ROUTER_ADDRESS,
-  [SupportedChainId.BASE]: BASE_ROUTER_ADDRESS,
 }
 
 /**
